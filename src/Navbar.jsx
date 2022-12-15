@@ -1,24 +1,33 @@
 import user from "./Images/user.png";
+import NavbarLinks from "./NavbarLinks";
+import HomeIcon from '@mui/icons-material/Home';
+import ContactsIcon from '@mui/icons-material/Contacts';
+import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
+import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
+import SearchIcon from '@mui/icons-material/Search';
 
 const Navbar = () =>{
+  let curDate = new Date().toLocaleDateString();
+  let curTime = new Date().toLocaleTimeString();
+
     return(
         <>
-        <div class="border_curve navbar">
-        <div class="nav_links">
-          <a href="#" class="home"><h3>Home</h3></a>
-          <a href="#" class="about"><h3>About</h3></a>
-          <a href="#" class="contact"><h3>Contact</h3></a>
-          <a href="#" class="more"><h3>More</h3></a>
+        <div className="border_curve navbar">
+        <div className="nav_links">
+          <NavbarLinks href="#" navLinkClass="home" NavLinkName="Home" icon={<HomeIcon/>}/>
+          <NavbarLinks href="#" navLinkClass="about" NavLinkName="About" icon={<ContactsIcon/>}/>
+          <NavbarLinks href="#" navLinkClass="contact" NavLinkName="Contact" icon={<HeadsetMicIcon/>}/>
+          <NavbarLinks href="#" navLinkClass="more" NavLinkName="More" icon={<DoubleArrowIcon/>}/>
         </div>
-        <div class="searchbar">
-          <input type="text" class="search" placeholder="Search here" />
-          <button class="search_icon">🔎</button>
+        <div className="searchbar">
+          <input type="text" className="search" placeholder="Search here " />
+          <button className="search_icon"><SearchIcon/></button>
         </div>
-        <div class="date_time">
-          <div class="date">09/12/2022</div>
-          <div class="time">23:14:50</div>
+        <div className="date_time">
+          <div className="date">{curDate}</div>
+          <div className="time">{curTime}</div>
         </div>
-        <img class="avatar" src={user} alt="avatar" />
+        <img className="avatar" src={user} alt="avatar" />
       </div>
         </>
     );

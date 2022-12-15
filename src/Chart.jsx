@@ -4,20 +4,20 @@ import chart from "./Images/Chart.png";
 
 const Chart = () => {
     return(<>
-        <div class="border_curve chart_container">
-        <h4 class="chart_title">Chart Title</h4>
-        <div class="chart">
-          <img src={chart} alt="" />
-          <div class="legend_box">
-            <h5 class="Legend_title">Legend</h5>
-            <div class="legend_box_container">
-              <div class="box box1">
-                <div class="legend_value">100</div>
-                <div class="legend_name">One</div>
+        <div className="border_curve chart_container">
+        <h4 className="chart_title">Chart Title</h4>
+        <div className="chart">
+          <img src={chart} alt="chart" />
+          <div className="legend_box">
+            <h5 className="Legend_title">Legend</h5>
+            <div className="legend_box_container">
+              <div className="box box1">
+                <div className="legend_value">100</div>
+                <div className="legend_name">One</div>
               </div>
-              <div class="box box1">
-                <div class="legend_value">100</div>
-                <div class="legend_name">One</div>
+              <div className="box box1">
+                <div className="legend_value">100</div>
+                <div className="legend_name">One</div>
               </div>
             </div>   
           </div>

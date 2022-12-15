@@ -1,25 +1,33 @@
 import React from "react";
 import logo from "./Images/Logo.png";
+import Category from "./Category";
+import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import ForumIcon from '@mui/icons-material/Forum';
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+import LogoutIcon from '@mui/icons-material/Logout';
 
-const Left_sidebar = () =>{
-    return(<>
-        <div class="border_curve left_sidebar">
+const Left_sidebar = () => {
+  return (
+    <>
+      <div className="border_curve left_sidebar">
         <div class="logo">
-          <img class="logo_img"  src={logo} alt="logo" />
+          <img class="logo_img" src={logo} alt="logo" />
           <h3 class="logo_title">CampVerse</h3>
         </div>
-        <div class="category">
-          <a href="#" class="forum"><h3>Forum</h3></a>
-          <a href="#" class="resources"><h3>Resources</h3></a>
-          <a href="#" class="placements"><h3>Placements</h3></a>
-          <a href="#" class="events"><h3>Events</h3></a>
+        <div className="category">
+          <Category href="#" categoryClass="forum" categoryName="Forum" icon={<ForumIcon/>}/>
+          <Category href="#" categoryClass="resources" categoryName="Resources" icon={<LibraryBooksIcon/>}/>
+          <Category href="#" categoryClass="placements" categoryName="Placements" icon={<BusinessCenterIcon/>}/>
+          <Category href="#" categoryClass="events" categoryName="Events" icon={<EmojiEventsIcon/>}/>
         </div>
         <div class="signout_container">
           {/* <div class="signout_icon"></div> */}
-          <button class="signout_btn">Sign Out</button>
+          <button class="signout_btn"><LogoutIcon/> Sign Out</button>
         </div>
       </div>
-    </>);
-}
+    </>
+  );
+};
 
 export default Left_sidebar;
