@@ -1,5 +1,5 @@
 import React from "react";
-import user from "./Images/user.png";
+import user from "../Images/user.png";
 
 const Post = () => {
     return(<>

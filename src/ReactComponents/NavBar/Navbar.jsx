@@ -1,4 +1,4 @@
-import user from "./Images/user.png";
+import user from "../Images/user.png";
 import NavbarLinks from "./NavbarLinks";
 import HomeIcon from '@mui/icons-material/Home';
 import ContactsIcon from '@mui/icons-material/Contacts';

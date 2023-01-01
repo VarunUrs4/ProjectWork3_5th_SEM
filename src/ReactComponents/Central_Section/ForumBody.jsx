@@ -1,4 +1,4 @@
-import other_user from "./Images/other_user.png";
+import other_user from "../Images/other_user.png";
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import ThumbDownIcon from '@mui/icons-material/ThumbDown';
 import BookmarkIcon from '@mui/icons-material/Bookmark';

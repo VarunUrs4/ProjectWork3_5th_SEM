@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./Images/Logo.png";
+import logo from "../Images/Logo.png";
 import Category from "./Category";
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
